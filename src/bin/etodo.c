@@ -7,6 +7,8 @@ create_menu(Evas_Object *parent)
    Evas_Object *list;
 
    list = elm_list_add(parent);
+   elm_list_mode_set(list, ELM_LIST_COMPRESS);
+   elm_list_bounce_set(list, EINA_FALSE, EINA_TRUE);
    elm_list_item_append(list, "Task", NULL, NULL, task_cb, NULL);
    elm_list_item_append(list, "Calendar", NULL, NULL, NULL, NULL);
    elm_list_item_append(list, "Settings", NULL, NULL, NULL, NULL);
