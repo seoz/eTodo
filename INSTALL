@@ -1,0 +1,4 @@
+[build & run]
+$ make
+$ sudo make install
+$ etodo
