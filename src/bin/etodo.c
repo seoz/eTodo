@@ -35,11 +35,12 @@ my_win_main(void)
 }
 
 EAPI_MAIN int
-elm_main(int argc, char **argv)
+elm_main(int argc __UNUSED__, char **argv __UNUSED__)
 {
    elm_policy_set(ELM_POLICY_QUIT, ELM_POLICY_QUIT_LAST_WINDOW_CLOSED);
    my_win_main();
    elm_run();
    elm_shutdown();
+   return 0;
 }
 ELM_MAIN();
